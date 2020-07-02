@@ -1,0 +1,209 @@
+/*
+	DIOGENES JUNIOR
+	CONTATO@DIOGENESJUNIOR.COM.BR
+	
+*/
+
+/*---------------------------------
+	RESETS
+-----------------------------------*/
+
+html,body{
+    height: 100%;
+}
+body{
+	overflow-x: hidden;
+    background:#fff;
+}
+
+@media(max-width: 540px){
+  html,body{
+    max-width: 100% !important;
+    
+  }
+}
+
+/*---------------------------------
+	IMPORTS E CONSULTAS E MOBILE
+	
+XS = < 544px
+SM = > 544px
+MD = > 768px
+LG = > 992px
+XL = > 1200px
+
+CSS GRID
+-----------------------------------*/
+
+
+.wow {
+   visibility: hidden;
+}
+::selection { background: #757575; color: #fff; } ::-moz-selection { background: #757575; color: #fff; }
+
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*---------------------------------
+	HEADER
+-----------------------------------*/
+header{
+  position: relative;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: #171717;
+  text-align: center;
+}
+
+header .logo{
+  padding-top: 20px;
+}
+
+header .logo img{
+  max-width: 100%;
+  height: auto;
+}
+
+header .menu-desktop{
+  text-align: center;
+}
+
+header .menu-desktop nav {
+  margin: 20px 0;
+}
+
+header .menu-desktop nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+  
+header .menu-desktop nav ul li {
+  display:inline-block;
+}
+
+header .menu-desktop nav a {
+    display: block;
+    padding: 0 14px;
+    color: #20d2b9;
+    font-size: 13px;
+    line-height: 56px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*
+header .menu-desktop nav a:hover { 
+  background-color: #000000; 
+}
+*/
+
+/* Hide Dropdowns by Default */
+header .menu-desktop nav ul ul {
+    display: none;
+    position: absolute;
+    top: 48px;
+    /* left: 0; */
+    margin-left: -8px;
+    background: #f7f7f7;
+    padding: 16px;
+    text-align: left;
+    /* line-height: 24px; */
+}
+  
+/* Display Dropdowns on Hover */
+header .menu-desktop nav ul li:hover > ul {
+  display:block;
+}
+
+  
+/* Fisrt Tier Dropdown */
+header .menu-desktop nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+
+header .menu-desktop nav ul ul li a,
+header .menu-desktop nav ul ul li a:hover{
+  color: #777777;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 27px !important;
+}
+
+
+/* Second, Third and more Tiers */
+header .menu-desktop nav ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:170px;
+}
+
+  
+/* Change this in order to change the Dropdown symbol 
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+*/
+
+header .evolutiva-banner{
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+
+/*---------------------------------
+  POS BANNER
+-----------------------------------*/
+section.pos-banner{
+  position: relative;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 600px;
+}
+
+section.pos-banner .row{
+  height: 100%;
+}
+section.pos-banner .col{
+  height: 100%;
+  background: #f2f2f2;
+}
+
+section.pos-banner .col.coluna-um{
+   background: #1780d4;
+}
+
+section.pos-banner .col.coluna-dois{
+  background: #f8f8fa;
+}
+
+section.pos-banner .col.coluna-tres{
+  background: #000000;
+}
